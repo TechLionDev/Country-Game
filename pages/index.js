@@ -22,7 +22,7 @@ const App = () => {
 	const isCountry = (input) =>{
 		for (let i = 0; i < countries.length; i++){
 			let country = countries[i].toUpperCase();
-			if (input.toUpperCase() == country){
+			if (input.trim().toUpperCase() == country){
 				return true
 			}
 		}
