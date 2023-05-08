@@ -65,9 +65,10 @@ const App = () => {
   return (
     <div className='flex w-full justify-center my-8'>
 <div className='flex flex-col max-w-xl justify-center items-center gap-4 bg-sky-100 p-8 rounded-lg min-w-xl'>
-      <h1 className='text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl '>Country Game</h1>
-      <p>Enter the name of a country that begins with the letter {currLetter}:</p>
-      <input placeholder='Type Your Guess Here...' className='bg-gray-50 border border-blue-100 text-gray-900 sm:text-sm rounded-lg focus:outline-none border-2 focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5' type="text" onKeyPress={handleKeyPress} />
+      <h1 className='text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl '>Country Game</h1>
+        <p>Enter the name of a country that begins with the letter: </p>
+        <h3 className='text-2xl font-black '>{currLetter}</h3>
+      <input placeholder='Type Your Guess Here...' className='bg-gray-50 border-blue-100 text-gray-900 sm:text-sm rounded-lg focus:outline-none border-2 focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5' type="text" onKeyPress={handleKeyPress} />
       <p>Score: {score}</p>
       <div
                 className={
